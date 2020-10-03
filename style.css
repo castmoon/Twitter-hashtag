@@ -1,0 +1,533 @@
+/* RESET */
+body,
+header,
+section,
+div,
+ul,
+li,
+a,
+footer,
+h1,
+h2,
+h3,
+input,
+label,
+textarea,
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+
+/*CSS Index - Coisas gerais Mobile First*/
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 90vw;
+  padding: 3%;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+
+}
+
+header h1 {
+  font-size: 16px;
+  color: #00acee;
+}
+
+header h1 a {
+  font-size: 8px;
+  color: black;
+}
+#logo{
+  width: 38%;
+}
+nav{
+  text-align: center;
+  width: 62%;
+}
+#fantasma{
+  width: 0%;
+}
+#menu {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#menu li{
+  display: inline-block;
+  padding: 10px 3px;  
+  font-weight: bold;
+  font-size: 7px;
+}
+
+#menu li a{
+  text-decoration:  none;
+  color: black
+}
+
+main#container {
+margin-left: 20%;
+margin-top: 15%;
+width: 70%;
+margin-right: 10%;
+}
+
+section.text-container div h1 {
+  font-size: 16px;
+  line-height: 14px;
+}
+
+section.input-container {
+ margin: 20px;
+ width: 40%;
+}
+
+#formulario{
+  width: 80%;
+  margin: 0 auto;
+  margin-left: 0px;
+}
+#campo {
+  border: 1px solid black;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  font-size: 8px;
+  padding-left: 10px;
+  width: 40%;
+  margin: 10px 10px;
+}
+
+#botao-enviar{
+  background-color: #00abee ;
+  font-size: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  width: 20%;
+  font-size: 8px;
+  margin: 10px 10px;
+}
+
+
+footer{
+  background-color: #0986b8c5;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0px;
+  margin: 0px;
+  position: fixed;
+  bottom:0;
+  color: white;
+  -webkit-box-shadow: 2px 2px 10px 10px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 2px 10px 10px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px 10px rgba(0,0,0,0.3);
+    z-index: 4;
+}
+
+/*CSS Página Sobre o Projeto Mobile First*/
+
+#container-projeto{
+ 
+  width: 90vw;
+  height: 100%;
+  justify-content: center;
+  padding: 2%;
+  margin: 0 auto;
+  margin-top: 10px;
+
+}
+
+.texto-projeto{
+  width: 100%;
+  margin-bottom: 30px;
+
+}
+p{
+  line-height: 14px;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.imagem-projeto{
+  width: 100%;
+  position: relative;
+}
+
+#celular{
+  position: absolute;
+  margin-bottom: 20px;
+
+}
+#laptop{ 
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 40%;
+  margin-bottom: 40px;
+}
+
+/*CSS Página Sobre Nós Mobile First*/
+
+#h1-aboutus{
+  font-weight: bold;
+  font-size: 16px;
+}
+#span-aboutus{
+  color: black;
+  font-size: 8px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.container-element-father{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color:white ;
+}
+
+.container-sm {
+margin: 0 auto;
+padding: 0;
+position: relative;
+top: 10%;
+width: 80%;
+}
+
+.col-sm{
+text-align: center;
+align-items: center;
+justify-content: center;
+background-color:white;
+position: relative;
+width: 80%;
+margin-top: 5%;
+margin-bottom: 5%;
+}
+
+.image{
+width: 50%;
+}
+
+.col-sm:hover .overlay {
+opacity: 1;
+}
+
+.overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+opacity: 0;
+transition: .5s ease;
+background-color:#f8f9fa;
+z-index: 3;
+}
+
+.text {
+width: 100%;
+color:black;
+font-size: 100%;
+position: absolute;
+padding:0;
+text-align: center;
+}
+
+.col{
+position: relative;
+top:5px;
+padding-left: 0;
+padding-right: 0;
+}
+
+#empty{
+margin:0;
+border-style: none;
+}
+#wesley-foto{
+  border-radius: 50%;
+}
+
+/*CSS Página Pesquisar Mobile First*/
+
+
+.pesquisar {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+#formulario-search{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tweets {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.tweets img {
+  width: 100%;
+  padding: 10px;
+}
+@media (min-width: 315px){
+  header h1 {
+    font-size: 16px;
+    color: #00acee;
+  }
+  
+  header h1 a {
+    font-size: 10px;
+    color: black;
+  }
+  #menu li{
+    display: inline-block;
+    padding: 10px 6px;  
+    font-weight: bold;
+    font-size: 8px;
+  }
+  #h1-aboutus{
+    font-weight: bold;
+    font-size: 16px;
+  }
+  #span-aboutus{
+    color: black;
+    font-size: 10px;
+  }
+}
+@media (min-width: 365px){
+  #menu li{
+    font-size: 9px;
+  }
+  section.text-container div h1 {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  #campo {
+    font-size: 9px;
+  }
+  #botao-enviar{
+    font-size: 9px;
+  }
+}
+@media (min-width: 420px){
+  #menu li{
+    padding: 10px 6px;
+    font-size: 11px;
+  }
+  p{
+    line-height: 15px;
+    font-size: 13px;
+  }
+  section.text-container div h1 {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  #campo {
+    font-size: 10px; 
+  }
+  #botao-enviar{
+    font-size: 10px;
+  }
+  .tweets {
+    width: 60%;
+
+}
+}
+@media (min-width: 502px){
+  #menu li{
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+  section.text-container div h1 {
+    font-size: 30px;
+    line-height: 28px;
+  }
+  .col-sm{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    position: relative;
+    width: 33%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    }
+}
+@media (min-width: 724px){
+  
+  header {
+    width: 90%;
+    padding: 2%;;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    position: relative;
+  
+  }
+  
+  header h1 {
+    font-size: 29px;
+    color: #00acee;
+  }
+  
+  header h1 a {
+    font-size: 20px;
+    color: black;
+  }
+  section.text-container div h1 {
+    font-size: 37px;
+    line-height: 35px;
+  }
+  
+  #campo {
+    font-size: 13px; 
+  }
+  #botao-enviar{
+    font-size: 13px;
+  }
+  #h1-aboutus{
+    font-weight: bold;
+    font-size: 29px;
+  }
+  #span-aboutus{
+    color: black;
+    font-size: 20px;
+  }
+  #logo{
+    width: 33%;
+  }
+  nav{
+    width: 66%;
+  }
+  #fantasma{
+    width: 0px;
+  }
+  #menu li{
+    display: inline-block;
+    padding: 10px 30px;  
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  #menu li a{
+    text-decoration:  none;
+    color: black
+  }
+  
+  /* CSS Página Sobre o Projeto*/
+  
+  #container-projeto{
+    margin-top: 30px;
+  
+  }
+  p{
+    line-height: 16px;
+    font-size: 14px;
+  }
+  /*CSS Página Sobre Nós */
+  .container-sm {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    top: 10%;
+    width: 70%;
+    }
+    /*CSS Página Search */
+  .tweets {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+  
+  .tweets img {
+    width: 40%;
+    padding: 10px;
+  }
+}
+@media (min-width: 1025px){
+  #menu li{
+    font-size: 16px;
+  }
+  #logo{
+    width: 25%;
+  }
+  nav{
+    width: 50%;
+  }
+  #fantasma{
+    width: 25%;
+  }
+  #campo {
+    font-size: 15px;
+  }
+  #botao-enviar{
+    font-size: 15px;
+  }
+  section.text-container div h1 {
+    font-size: 47px;
+    line-height: 45px;
+  }
+  #container-projeto{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .texto-projeto{
+    width: 36%;
+    height: 100vh;
+    margin-right: 2%;
+  
+  }
+  p{
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 30px;
+  }
+  .imagem-projeto{
+    width: 56%;
+    height: 100vh;
+    margin-left: 2%;
+    position: relative;
+  }
+  .tweets {
+    width: 70%;
+  }
+  .tweets img {
+    width: 30%;
+  }
+}
