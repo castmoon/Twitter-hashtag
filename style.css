@@ -97,11 +97,12 @@ section.input-container {
  margin: 20px;
  width: 40%;
 }
-
+#caixa-formulario{
+  justify-content: left;
+}
 #formulario{
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  margin-left: 0px;
 }
 #campo {
   border: 1px solid black;
@@ -109,8 +110,9 @@ section.input-container {
   color: black;
   font-weight: bold;
   font-size: 8px;
+  padding: 1%;
   padding-left: 10px;
-  width: 40%;
+  width: 30%;
   margin: 10px 10px;
 }
 
@@ -121,9 +123,10 @@ section.input-container {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  width: 20%;
+  width: 15%;
   font-size: 8px;
   margin: 10px 10px;
+  padding: 1%;
 }
 
 
@@ -144,21 +147,28 @@ footer{
 
 /*CSS Página Sobre o Projeto Mobile First*/
 
+#body-projeto {
+  overflow-x: hidden;
+}
+
 #container-projeto{
- 
   width: 90vw;
   height: 100%;
   justify-content: center;
   padding: 2%;
   margin: 0 auto;
   margin-top: 10px;
-
+  
 }
 
 .texto-projeto{
   width: 100%;
   margin-bottom: 30px;
 
+}
+#h2projeto{
+  color: #2893bd;
+  font-weight: bold;
 }
 p{
   line-height: 14px;
@@ -174,14 +184,24 @@ p{
 #celular{
   position: absolute;
   margin-bottom: 20px;
-
 }
+/* #celular:hover{
+  z-index: 2;
+}
+.celular:hover{
+  width: 55%;
+} */
+
 #laptop{ 
   position: absolute;
   margin-top: 40%;
   margin-left: 40%;
   margin-bottom: 40px;
 }
+/* .laptop:hover{
+  
+  width: 110%;
+} */
 
 /*CSS Página Sobre Nós Mobile First*/
 
@@ -215,6 +235,9 @@ position: relative;
 top: 10%;
 width: 80%;
 }
+.image{
+  width: 50%;
+  }
 
 .col-sm{
 text-align: center;
@@ -228,7 +251,7 @@ margin-bottom: 5%;
 }
 
 .image{
-width: 50%;
+width: 70%;
 }
 
 .col-sm:hover .overlay {
@@ -281,10 +304,6 @@ border-style: none;
   margin: 0 auto;
   text-align: center;
 }
-#formulario-search{
-  width: 80%;
-  margin: 0 auto;
-}
 
 .tweets {
   width: 80%;
@@ -294,10 +313,13 @@ border-style: none;
   justify-content: center;
 }
 
-.tweets img {
+.tweets a .tweet-img {
   width: 100%;
   padding: 10px;
+  display: inline-block;
 }
+
+
 @media (min-width: 315px){
   header h1 {
     font-size: 16px;
@@ -378,8 +400,8 @@ border-style: none;
     background-color:white;
     position: relative;
     width: 33%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     }
 }
 @media (min-width: 724px){
@@ -475,9 +497,15 @@ border-style: none;
     justify-content: center;
   }
   
-  .tweets img {
+  .tweets a .tweet-img {
+    width: 100%;
+    display: inline-block;;
+  }
+  .tweets a {
+    display: inline-block;
     width: 40%;
     padding: 10px;
+    
   }
 }
 @media (min-width: 1025px){
@@ -527,7 +555,13 @@ border-style: none;
   .tweets {
     width: 70%;
   }
-  .tweets img {
+  .tweets a .tweet-img {
+    width: 100%;
+
+  }
+  .tweets a {
+    display: inline-block;
     width: 30%;
+    padding: 10px;
   }
 }
